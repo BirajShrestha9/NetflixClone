@@ -1,0 +1,63 @@
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px 60px; 
+    box-sizing: border-box;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    scrollbar-width: none; 
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .card img {
+    height: 280px;
+    width: 150px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-btn.left {
+    left: 0;
+  }
+  
+  .carousel-btn.right {
+    right: 0;
+  }
+  
+  .carousel-btn img {
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+  }
+  
+  .carousel-btn img:hover {
+    transform: scale(1.1);
+  }
+  

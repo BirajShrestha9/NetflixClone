@@ -1,0 +1,523 @@
+
+.body {
+    margin: 0;
+    background-image: url(/bg.jpg);
+     background-repeat: no-repeat;           
+    background-size: cover;                  
+    background-position: center; 
+    margin: 0;
+        padding: 0;
+        overflow-x: hidden;           
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+     
+      
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+.foot{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: red;
+    margin: 0;
+    animation: fadeRight 1s ease-out;
+    
+}
+#title:hover{
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.2);
+}
+
+.foot{
+     margin-bottom: 20px;
+}
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 10px 20px; 
+        
+      }
+      
+      .footer-container a {
+        color:  rgb(245, 112, 216);               
+        text-decoration: underline;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+      
+      .footer-container a:hover {
+        color: white;                
+      }
+      
+      .carousel-wrapper {
+        position: relative;
+        width: 100%;
+        padding: 20px 60px; /* Add side padding to make space for buttons */
+        box-sizing: border-box;
+      }
+      
+      .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 20px;
+        scrollbar-width: none; /* Firefox */
+      }
+      
+      .carousel::-webkit-scrollbar {
+        display: none; /* Chrome */
+      }
+      
+      .card img {
+        height: 280px;
+        width: 150px;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+      }
+      
+      .card img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+      }
+      
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        z-index: 10;
+      }
+      
+      .carousel-btn.left {
+        left: 0;
+      }
+      
+      .carousel-btn.right {
+        right: 0;
+      }
+      
+      .carousel-btn img {
+        height: 50px;
+        width: 50px;
+        border: 3px solid black;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease;
+      }
+      
+      .carousel-btn img:hover {
+        transform: scale(1.1);
+      }
+      
+
+
+#ft{
+background-color: rgb(13, 1, 22);
+justify-content: center;
+border-radius: 0%;
+}
+
+a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    animation: fadeRight 1s ease-out;
+}
+
+
+a:hover {
+    background-color: #e50914;
+    transform: scale(1.1);
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+input::placeholder {
+    color: beige;
+}
+
+.banner {
+    background-image: url(/ban.jpg);
+    padding-left: 40px;
+    padding-right: 40px;
+            
+                   
+     background-position: center;             
+     
+      
+}
+
+.banner-heading {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 130px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: fadeRight 1.5s ease-out;
+}
+
+.banner-subheading {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.banner-description {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.email-input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.email-input {
+    padding: 12px 24px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: grey;
+}
+
+.get-started-button {
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
+.reasons-heading {
+    font-size: 50px;
+    color: rgb(245, 112, 216);
+    padding-left: 50px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: fadeRight 2s ease-out;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.reason-box {
+    height: 200px;
+    width: 250px;
+    background-color: rgb(116, 76, 153);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    opacity: 0; 
+    animation: fadeDown 1s ease-out forwards; 
+}
+
+.reason-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reason-description {
+    color: rgba(245, 245, 245, 0.589);
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: larger;
+}
+.reason-box:hover{
+    transform: scale(1.1);
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.faq-heading {
+    font-size: 50px;
+    color: rgb(245, 112, 216);
+    padding-left: 50px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    animation: fadeRight 2s ease-out;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-container :hover {
+    transform: scale(1.02);
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+   
+}
+
+.faq-item {
+    background-color: #ffffff;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-title {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    background-color: rgba(48, 5, 73, 0.945);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-content {
+    padding: 15px;
+    background-color: rgb(116, 76, 153);
+    display: none;
+    color: white;
+}
+
+.faq-item input:checked + .faq-title + .faq-content {
+    display: block;
+}
+
+.faq-item .faq-content p {
+    font-size: 16px;
+    color: rgba(245, 245, 245, 0.589);
+}
+
+.email-prompt {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner-heading {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+
+    .banner-subheading {
+        font-size: 20px;
+    }
+
+    .banner-description {
+        font-size: 16px;
+        
+    }
+
+    .email-input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason-box {
+        width: 100%; /* Flil width for each box */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .reasons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons-heading {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-heading {
+        font-size: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faq-title {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .faq-content {
+        font-size: 14px;
+    }
+
+    .email-input {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .get-started-button {
+        width: 90%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 768px) {
+        .carousel-wrapper {
+          padding: 10px;
+        }
+      
+        .carousel {
+          gap: 10px;
+        }
+      
+        .card img {
+          width: 120px;
+          height: 200px;
+        }
+      
+        .carousel-btn img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+      .email-input-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      .email-input,
+      .get-started-button {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+      }
+    
+      #title {
+        font-size: 28px;
+      }
+    
+      .header-container a {
+        font-size: 16px;
+      }
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        text-align: center;
+      }
+}
+@media only screen and (max-width: 480px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Stack vertically on very small screens */
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+    .banner-heading {
+        font-size: 60px;
+    }
+
+    .reasons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason-box {
+        width: 45%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .reasons-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reason-box {
+        width: 22%; 
+    }
+
+    .email-input-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .get-started-button {
+        width: 30%;
+    }
+}
